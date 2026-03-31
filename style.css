@@ -1,0 +1,77 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* SCROLL EFFECT */
+nav.scrolled {
+    background: #333;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* LOGO */
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+    background: #ff9800;
+    color: black;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* DIFFERENT BACKGROUNDS */
+#home { background: #6a11cb; color: white; }
+#about { background: #2575fc; color: white; }
+#services { background: #43cea2; color: white; }
+#contact { background: #ff512f; color: white; }
